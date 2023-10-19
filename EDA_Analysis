@@ -1,1 +1,45 @@
 Analyzing Data Through Exploratory Methods Using Popular Data Science YouTube Channel Videos.
+
+
+Here's a reworded version of the provided content:
+
+1. Purpose, Goals, and Context
+1.1. Overview
+Since its inception in 2005, YouTube has risen to be the world's second-largest search engine, handling over 3 billion queries monthly [1]. The intricacies of YouTube's algorithm remain largely enigmatic, leaving many wondering about the factors influencing video recommendations and views. YouTube's recommendation system is among the most advanced and expansive in the industry [2]. For emerging content creators, discerning the reasons behind the success or failure of a video is challenging. Various assumptions surround YouTube video success [3], such as the impact of likes, comments, or video length. This project aims to identify patterns in the content of leading data science YouTube channels.
+
+As a newcomer to YouTube content creation, focusing on data analytics and science, I embarked on this journey to unearth insights beneficial for fellow creators. This project narrows its lens to data science channels, excluding other genres with potentially different dynamics.
+
+1.2. Goals and Targets
+This project aims to:
+
+Familiarize with the YouTube API and data extraction methods.
+Investigate prevalent beliefs about YouTube video success, such as:
+The influence of likes and comments on views.
+The role of video length in attracting views and engagement.
+The impact of title length on viewership.
+The number and nature of tags in successful videos.
+The frequency and preferred days of video uploads by top creators.
+Delve into trending subjects using NLP:
+Identify common themes in video titles.
+Uncover prevalent questions in video comments.
+1.3. Project Methodology
+Extract metadata from the YouTube API for leading data science channels.
+Process and enhance the data for analysis.
+Conduct exploratory data analysis.
+Draw conclusions.
+1.4. Data Source
+Data Selection:
+
+While the focus is on data science channels, few existing datasets cater to this niche. Two potential datasets were:
+
+Kaggle's trending YouTube videos: This dataset, though extensive, spans various topics, making it unsuitable for this project.
+Vishwanath Seshagiri's GitHub repository offers metadata for over 500,000 YouTube videos. However, its creation methodology is unclear, and it lacks data on the channels of interest.
+Consequently, I curated a dataset using the Google YouTube Data API v3.0, detailed in section 2.
+
+Data Constraints:
+
+The dataset, while reflective of the real world, has its limitations. The selection of the top 10 channels is subjective, based on my familiarity with the data science domain. The criterion of "popularity" is solely subscriber count, overlooking other potential metrics. The choice of the top 10 is also arbitrary, given YouTube's vast landscape.
+
+Data Ethics:
+
+The YouTube API, while free, operates within a quota to maintain service quality. The default daily quota is 10,000 units, with provisions for extensions. The data sourced from the API is public, mitigating privacy concerns. This research is purely academic, devoid of commercial motives.
